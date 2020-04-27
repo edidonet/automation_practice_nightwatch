@@ -1,0 +1,13 @@
+{
+    "first_name":       "Eduardo",
+    "last_name":        "Teste",
+    "password":         "123456",
+    "first_name_addr":  "Eduardo",
+    "last_name_addr":   "Teste",
+    "addr_line_1":      "45 Test Street",
+    "addr_line_2":      "101",
+    "city":             "Los Angeles",
+    "state":            "California",
+    "zip":              "90210",
+    "mobile_phone":     "+18725553399"
+}
