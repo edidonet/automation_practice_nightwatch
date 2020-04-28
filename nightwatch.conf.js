@@ -6,6 +6,8 @@ require('geckodriver');
 // const testUrl = 'http://automationpractice.com/'
 const defaultTimeout = 15000
 
+console.log(chromedriver.path)
+
 module.exports = {
     src_folders: ['tests'], 
 
@@ -42,7 +44,7 @@ module.exports = {
                 waitForConditionTimeout: defaultTimeout 
             },
             webdriver: {
-                server_path: "/node_modules/chromedriver/lib/chromedriver/chromedriver",
+                server_path: chromedriver.path,
                 port: 9515
             },
             desiredCapabilities: {
