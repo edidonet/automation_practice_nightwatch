@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image "chromedp/headless-shell"}
+        docker { image "chromedp/headless-shell:latest"}
     }
     stages {
         stage('Build') {
