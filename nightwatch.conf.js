@@ -42,7 +42,7 @@ module.exports = {
                 waitForConditionTimeout: defaultTimeout 
             },
             webdriver: {
-                server_path: "/node_modules/chromedriver/lib/chromedriver/chromedriver",
+                server_path: "./node_modules/chromedriver/lib/chromedriver/chromedriver",
                 port: 9515
             },
             desiredCapabilities: {
