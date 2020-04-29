@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image "chromedp/headless-shell:latest"}
+        docker { image "papitoio/node-wd"}
     }
     stages {
         stage('Build') {
