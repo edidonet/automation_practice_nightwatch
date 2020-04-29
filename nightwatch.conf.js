@@ -7,8 +7,6 @@ require('geckodriver');
 const defaultTimeout = 15000
 
 console.log(chromedriver.path)
-console.log(this.webdriver.server_path)
-console.log(webdriver.server_path)
 
 module.exports = {
     src_folders: ['tests'], 
