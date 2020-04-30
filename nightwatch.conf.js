@@ -3,7 +3,7 @@ require('babel-core/register')
 const chromedriver = require('chromedriver');
 require('geckodriver');
 
-// const testUrl = 'http://automationpractice.com/'
+const testUrl = 'http://automationpractice.com/'
 const defaultTimeout = 15000
 
 console.log(chromedriver.path)
@@ -33,7 +33,7 @@ module.exports = {
     test_settings:{
         default: {
             globals: {
-                // launch_url: testUrl,
+                launch_url: testUrl,
                 waitForConditionTimeout: defaultTimeout 
             },
             webdriver: {
@@ -47,7 +47,7 @@ module.exports = {
 
         headless: {
             globals: {
-                // launch_url: testUrl,
+                launch_url: testUrl,
                 waitForConditionTimeout: defaultTimeout 
             },
             webdriver: {
@@ -65,7 +65,7 @@ module.exports = {
 
         firefox: {
             globals: {
-                // launch_url: testUrl,
+                launch_url: testUrl,
                 waitForConditionTimeout: defaultTimeout 
             },
             webdriver: {
@@ -76,6 +76,9 @@ module.exports = {
                 browserName: "firefox",
                 acceptInsecureCerts: true
             }
+        },
+        stage: {
+            launch_url: "http://automationpractice.com"
         }
     }
 }

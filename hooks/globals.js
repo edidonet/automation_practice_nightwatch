@@ -3,7 +3,6 @@ module.exports = {
     beforeEach: (browser, done) => {
         browser
             .resizeWindow(1920, 1080)
-            .url('http://automationpractice.com/')
         done()
     },
 
