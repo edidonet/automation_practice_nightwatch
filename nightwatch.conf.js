@@ -23,6 +23,13 @@ module.exports = {
     //     workers: 3
     // },
 
+    screenshots: {
+        enabled: true,
+        on_failure: true,
+        on_error: true,
+        path: 'test_output/'
+    },
+
     test_settings:{
         default: {
             globals: {
