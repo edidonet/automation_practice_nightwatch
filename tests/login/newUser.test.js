@@ -2,7 +2,7 @@ import testData from "../data/newUser.json"
 import email from "../../support/emailId"
 
 module.exports = {
-
+    //'@disabled': true,
     'new user': (browser) => {
         let login = browser.page.login()
         console.log(email.emailId())

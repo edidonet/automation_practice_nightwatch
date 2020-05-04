@@ -3,7 +3,7 @@ require('babel-core/register')
 const chromedriver = require('chromedriver');
 require('geckodriver');
 
-const testUrl = 'http://automationpractice.com/'
+const testUrl = "http://automationpractice.com/"
 const defaultTimeout = 15000
 
 console.log(chromedriver.path)

@@ -2,17 +2,12 @@ import userData from "../data/existingUser.json"
 import testData from "../data/newUser.json"
 import cartData from "../data/cart.json"
 
-
 module.exports = {
+    //'@disabled': true,
     'log in': (browser) => {
-        let login = browser.page.login()
-
-        login
-            .click('@signInButton')
-            .setValue('@emailUser', userData['email'])
-            .setValue('@password', userData['password'])
-            .click('@submitButton')
-
+        let cart = browser.page.cart()
+        
+        cart.with(userData['email'], userData['password'])
     },
     'verify logged user': (browser) => {
         let user = browser.page.newUser()

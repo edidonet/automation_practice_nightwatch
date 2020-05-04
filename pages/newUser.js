@@ -1,6 +1,7 @@
 
 module.exports = {
     elements: {
+        emailCreationLogin: '#email_create',
         creationForm: '#account-creation_form',
         customerFirstName: '#customer_firstname', 
         customerLastName:'#customer_lastname', 

@@ -1,6 +1,24 @@
 
+var login_actions = {
+    with: function (email, password) {
+        return this
+            .navigate()
+            .click('@signInButton')
+            .setValue('@accountEmail', email)
+            .setValue('@accountPassword', password)
+            .click('@submitAccountButton')   
+    }
+}
+
 module.exports = {
+    url: 'http://automationpractice.com/',
+    commands: [login_actions],
     elements: {
+        signInButton: 'a.login',
+        accountEmail: '#email',
+        accountPassword: '#passwd',
+        //accountEmail: '#noSlide > h1',
+        submitAccountButton: 'button[id=SubmitLogin]',
         search: '#search_query_top',
         searchButton: 'button[name=submit_search]',
         product: 'a.product-name[title="Faded Short Sleeve T-shirts"]',

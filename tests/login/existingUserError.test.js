@@ -1,6 +1,6 @@
 
 module.exports = {
-    // '@disabled': true,
+    //'@disabled': true,
     'existing user': (browser) => {
         let login = browser.page.login()
 

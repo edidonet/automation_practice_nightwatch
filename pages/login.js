@@ -1,7 +1,8 @@
 
-var login_actions = {
+var new_login_actions = {
     with: function (email) {
         return this
+            .navigate()
             .click('@signInButton')
             .setValue('@emailCreationLogin', email)
             .click('@createAccountButton')   
@@ -9,7 +10,8 @@ var login_actions = {
 }
 
 module.exports = {
-    commands: [login_actions],
+    url: 'http://automationpractice.com/',
+    commands: [new_login_actions],
     elements: {
         accountCreation: '#noSlide > h1',
         createAccountButton: 'button[id=SubmitCreate]',
