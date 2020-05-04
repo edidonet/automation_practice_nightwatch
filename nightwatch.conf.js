@@ -37,7 +37,7 @@ module.exports = {
                 waitForConditionTimeout: defaultTimeout // As vezes a conexão com a internet/rede fica lenta
             },
             webdriver: {
-                server_path: chromedriver.path,
+                server_path: require('chromedriver').path,
                 port: 9515
             },
             desiredCapabilities: {
@@ -51,7 +51,7 @@ module.exports = {
                 waitForConditionTimeout: defaultTimeout // As vezes a conexão com a internet/rede fica lenta
             },
             webdriver: {
-                server_path: chromedriver.path,
+                server_path: require('chromedriver').path,
                 port: 9515
             },
             desiredCapabilities: {
