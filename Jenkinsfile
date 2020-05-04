@@ -10,9 +10,9 @@ pipeline {
         }
         stage('Tests') {
             steps {
-                sh "echo 'node version ->' node --version"
-                sh "echo 'chromedriver version ->' npm chromedriver --version"
-                sh "echo 'chrome version ->' npm chrome --version"
+                sh "node --version"
+                sh "npm chromedriver --version"
+                sh "npm chrome --version"
                 sh "npm run test:ci"
             }
             post {
