@@ -4,12 +4,15 @@ pipeline {
     }
     stages {
         stage('Build') {
-            steps{
+            steps {
                 sh "npm install"
             }           
         }
         stage('Tests') {
             steps {
+                sh "echo 'node version ->' node --version"
+                sh "echo 'chromedriver version ->' npm chromedriver --version"
+                sh "echo 'chrome version ->' npm chrome --version"
                 sh "npm run test:ci"
             }
             post {

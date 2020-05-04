@@ -30,11 +30,11 @@ module.exports = {
         path: 'test_output/'
     }, */
 
-    test_settings:{
+    test_settings: {
         default: {
             launch_url: testUrl,
-            globals: {  
-                waitForConditionTimeout: defaultTimeout 
+            globals: {
+                waitForConditionTimeout: defaultTimeout // As vezes a conexão com a internet/rede fica lenta
             },
             webdriver: {
                 server_path: chromedriver.path,
@@ -48,7 +48,7 @@ module.exports = {
         headless: {
             launch_url: testUrl,
             globals: {
-                waitForConditionTimeout: defaultTimeout 
+                waitForConditionTimeout: defaultTimeout // As vezes a conexão com a internet/rede fica lenta
             },
             webdriver: {
                 server_path: chromedriver.path,
@@ -58,7 +58,7 @@ module.exports = {
                 browserName: "chrome",
                 chromeOptions: {
                     w3c: false,
-                    args: ['--headless', '--no-sandbox', '--disabled-dev-shm-usage']
+                    args: ['--headless', '--no-sandbox', '--disable-dev-shm-usage']
                 }
             }
         },
@@ -77,6 +77,22 @@ module.exports = {
                 acceptInsecureCerts: true
             }
         },
+
+        linuxf: {
+            launch_url: testUrl,
+            globals: {
+                waitForConditionTimeout: defaultTimeout 
+            },
+            webdriver: {
+                server_path: './node_modules/.bin/geckodriver',
+                port: 4444
+            },
+            desiredCapabilities: {
+                browserName: "firefox",
+                acceptInsecureCerts: true
+            }
+        },
+        
         stage: {
             launch_url: "http://automationpractice.com"
         }

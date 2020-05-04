@@ -10,8 +10,10 @@
     "test:firefox": ".\\node_modules\\.bin\\nightwatch.cmd --env=firefox",
     "test:headless": ".\\node_modules\\.bin\\nightwatch.cmd ",
     "test:ci": "./node_modules/.bin/nightwatch --env=headless",
-    "test:linux": "./node_modules/.bin/nightwatch"
+    "test:linux": "./node_modules/.bin/nightwatch",
+    "test:linuxf": "./node_modules/.bin/nightwatch --env=linuxf"
   },
+
   "keywords": [
     "nodejs",
     "webdriver",
